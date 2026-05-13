@@ -4,6 +4,7 @@ function Workouts() {
   return (
     <ResourceView
       resourceName="workouts"
+      endpointExample="https://your-codespace-8000.app.github.dev/api/workouts"
       title="Workouts"
       description="Suggested training plans and recommended workout tracks delivered by the API."
       emptyMessage="No workouts returned from the API."

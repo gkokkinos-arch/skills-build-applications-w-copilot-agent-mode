@@ -3,6 +3,7 @@ import { buildApiUrl, formatFieldValue, normalizeApiResponse } from './api';
 
 function ResourceView({
   resourceName,
+  endpointExample,
   title,
   description,
   columns,
@@ -89,6 +90,11 @@ function ResourceView({
             >
               API endpoint
             </a>
+            {endpointExample && (
+              <p className="small text-muted mb-0 mt-2">
+                Codespaces example: {endpointExample}
+              </p>
+            )}
           </div>
 
           <div className="resource-summary card border-0 shadow-sm">
